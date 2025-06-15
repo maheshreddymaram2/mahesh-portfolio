@@ -10,7 +10,7 @@ import Projects from './components/Project';
 import Skills from './components/Skills';
 import  Coding from './components/Codingstats';
 import Contact from './components/Contact';
-import Footer from './components/fo';
+import Footer from './components/Footer';
 function App() {
   useEffect(() => {
     AOS.init({
