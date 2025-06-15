@@ -1,0 +1,109 @@
+.education {
+  background: linear-gradient(to right, #ffffff, #f6fbff);
+  padding: 60px 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #0077ff;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-left: 0;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #0077ff;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.15);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.float-card {
+  animation: float 5s ease-in-out infinite;
+}
+
+.timeline-content {
+  background-color: #ffffff;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  border-left: none !important;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 12px #0077ff;
+  transform: scale(1.02);
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-item {
+    flex-direction: row;
+  }
+
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+  }
+
+  .timeline-content {
+    padding: 0.9rem 1rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}

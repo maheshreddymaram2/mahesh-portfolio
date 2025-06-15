@@ -1,0 +1,87 @@
+.footer {
+  background-color: #f9f9f9;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #333;
+  border-top: 1px solid #ddd;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover & Active Effects */
+.footer:hover,
+.footer:focus-within,
+.footer:active {
+  background-color: #e6f2ff; /* Soft light-blue on hover */
+  box-shadow: 0 0 16px #0077ff;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Right Section */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Visitor Counter */
+.visitor-counter {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0077ff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.visitor-icon {
+  font-size: 1.1rem;
+  color: #0077ff;
+  transition: all 0.3s ease;
+}
+.visitor-counter:hover .visitor-icon {
+  color: #0056cc;
+  filter: drop-shadow(0 0 6px #0077ff);
+}
+
+/* Social Icons */
+.social-icons a {
+  margin: 0 0.3rem;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077ff;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+}
