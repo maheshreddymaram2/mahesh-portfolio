@@ -44,7 +44,7 @@ function Hero() {
               Download Resume
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/maheshreddymaram2"
               className="btn-outline"
               target="_blank"
               rel="noreferrer"
