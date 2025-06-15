@@ -36,8 +36,8 @@ function Contact() {
       <div className="contact-info-grid" data-aos="fade-up">
         <div className="contact-grid-box">
           <FaMapMarkerAlt className="grid-icon" />
-          <p>Hyderabad, India</p>
-          <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="grid-link">View Map</a>
+          <p>SRM Institute Of Science And Technology,Ramapuram</p>
+          <a href="https://maps.app.goo.gl/PC69BF6YKXfuLjjM8" target="_blank" rel="noreferrer" className="grid-link">View Map</a>
         </div>
 
         <div className="contact-grid-box">
