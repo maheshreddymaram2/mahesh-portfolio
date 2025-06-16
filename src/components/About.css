@@ -28,15 +28,15 @@
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   animation: float 5s ease-in-out infinite;
-   box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
 }
-.profile-image:hover{
-box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
+.profile-image:hover {
+  box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
   transform: scale(1.03);
 }
+
 .hero-text {
   flex: 1;
   max-width: 500px;
@@ -60,7 +60,7 @@ box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
   font-weight: 500;
 }
 
-/* ✅ New bio style */
+/* New bio style */
 .bio {
   font-size: 1.05rem;
   color: #333;
@@ -122,15 +122,15 @@ box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
 
   .hero-content {
     flex-direction: column-reverse;
-    align-items: flex-start; /* ✅ Aligns everything to left */
-    text-align: left;        /* ✅ No more centered layout */
+    align-items: flex-start;
+    text-align: left;
     gap: 1.2rem;
   }
 
   .profile-image {
     width: 180px;
     height: 180px;
-    align-self: center; /* ✅ Image stays centered visually */
+    align-self: center;
   }
 
   .hero-text {
@@ -140,7 +140,7 @@ box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
 
   .hero-text h1 {
     font-size: 1.8rem;
-    text-align:center;
+    text-align: center;
     margin-bottom: 0.8rem;
   }
 
@@ -154,19 +154,33 @@ box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
   .bio {
     font-size: 0.95rem;
     line-height: 1.6;
-    text-align:left;
+    text-align: left;
     margin: 0;
     padding: 0;
     word-break: normal;
     overflow-wrap: break-word;
-
   }
 
   .hero-buttons {
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
     gap: 0.8rem;
     margin-top: 1.2rem;
   }
 }
+
+/* Extra Small Screens (force vertical layout) */
+@media (max-width: 420px) {
+  .btn,
+  .btn-outline {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
