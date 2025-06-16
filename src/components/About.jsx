@@ -32,7 +32,7 @@ function Hero() {
             className="typing"
           />
 
-          {/* ✅ Added Bio */}
+          {/* Added Bio */}
           <p className="bio">
             I'm a B.Tech CSE (IoT) student at SRM University, passionate about building scalable full-stack
             applications and integrating them with real-world IoT systems. I'm always exploring ways to
