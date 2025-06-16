@@ -48,25 +48,6 @@
   flex-wrap: wrap;
 }
 
-/* Visitor Counter */
-.visitor-counter {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #0077ff;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.visitor-icon {
-  font-size: 1.1rem;
-  color: #0077ff;
-  transition: all 0.3s ease;
-}
-.visitor-counter:hover .visitor-icon {
-  color: #0056cc;
-  filter: drop-shadow(0 0 6px #0077ff);
-}
-
 /* Social Icons */
 .social-icons {
   display: flex;
@@ -102,3 +83,4 @@
     font-size: 1.5rem;
   }
 }
+
