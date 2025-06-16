@@ -6,9 +6,10 @@ function Footer() {
   const [visits, setVisits] = useState(0);
 
   useEffect(() => {
-    fetch('https://counterapi.dev/api/increment?key=mahesh-portfolio-visits')
+    // Call CountAPI to increment and get the updated value
+    fetch('https://api.countapi.xyz/hit/maheshreddy-portfolio/visits')
       .then(res => res.json())
-      .then(data => setVisits(data.count))
+      .then(data => setVisits(data.value))
       .catch(err => console.error("Visitor count error:", err));
   }, []);
 
@@ -38,4 +39,3 @@ function Footer() {
 }
 
 export default Footer;
-
