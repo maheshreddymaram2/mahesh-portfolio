@@ -1,28 +1,22 @@
-body {
+/* Base styles */
+ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8fafc;
   scroll-behavior: smooth;
 }
 
-.main-content {
-  padding-top: 80px; /* To avoid header overlap */
+main {
+  padding-top: 80px;
 }
 
 section {
   padding: 4rem 2rem;
   min-height: 100vh;
+  scroll-margin-top: 80px;
 }
 
-.hero-section {
-  background: #1e293b;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
-
+ /*Section containers */
 .about-section,
 .education-section,
 .skills-section,
@@ -34,3 +28,4 @@ section {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
+ 
