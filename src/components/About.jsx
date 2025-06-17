@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaGithub } from 'react-icons/fa';
 import './About.css';
 
-function Hero() {
+function About() {
   return (
     <section className="hero" id="about">
       <div className="hero-content">
@@ -32,7 +32,6 @@ function Hero() {
             className="typing"
           />
 
-          {/* Added Bio */}
           <p className="bio">
             I'm a B.Tech CSE (IoT) student at SRM University, passionate about building scalable full-stack
             applications and integrating them with real-world IoT systems. I'm always exploring ways to
@@ -61,4 +60,5 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default About;
+
