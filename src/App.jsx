@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Header />
-      <main style={{ paddingTop: '80px' }}>
+      <main>
         <About />
         <Education />
         <Experience />
@@ -31,11 +31,10 @@ function App() {
         <Coding />
         <Contact />
         <Footer />
-        {/* Other sections like Education, Projects, etc. */}
+        {}
       </main>
     </>
   );
 }
 
 export default App;
-
