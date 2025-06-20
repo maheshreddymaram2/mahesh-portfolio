@@ -1,5 +1,6 @@
 .experience {
-  background: linear-gradient(to right, #f2f9ff, #e0f2ff);
+/*   background: linear-gradient(to right, #f2f9ff, #e0f2ff); */
+   background: linear-gradient(to right, #ffffff, #f6fbff);
   padding: 60px 1rem;
   text-align: center;
 }
