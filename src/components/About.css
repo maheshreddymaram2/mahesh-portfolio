@@ -149,8 +149,10 @@
   }
 
   .bio {
-    font-size: 0.95rem;
-    text-align: justify;
+     font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    padding: 0 10px;
   }
 
   .hero-buttons {
