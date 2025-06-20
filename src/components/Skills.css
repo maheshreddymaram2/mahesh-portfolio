@@ -10,13 +10,26 @@
   margin-bottom: 40px;
 }
 
-.skills-grid.flat.no-icons {
+/* Grid: now applies to all skills-grid instances */
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.2rem;
   max-width: 1000px;
   margin: 0 auto;
   justify-items: center;
+}
+
+/* Section wrapper */
+.skill-section {
+  margin-bottom: 2rem;
+}
+
+/* Section subtitles */
+.skill-subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 2rem 0 1rem;
 }
 
 .skill-box {
@@ -38,18 +51,24 @@
   box-shadow: 0 0 12px #0077ff;
 }
 
+.skill-icon {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Float animation */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  50%     { transform: translateY(-5px); }
 }
 
-/* Responsive */
+/* Responsive tweaks */
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.8rem;
   }
-
   .skill-box {
     font-size: 0.9rem;
     padding: 0.8rem;
