@@ -1,6 +1,7 @@
 .contact-section {
   padding: 60px 20px;
-  background: #f9fcff;
+/*   background: #f9fcff; */
+  background: linear-gradient(to right, #ffffff, #f6fbff);
   text-align: center;
 }
 
