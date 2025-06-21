@@ -54,11 +54,7 @@
   50% { transform: translateY(-6px); }
 }
 
-/* Optional: Wider card support */
-.wide-card {
-  grid-column: span 2;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.8rem;
@@ -71,8 +67,26 @@
   .stats-link {
     font-size: 0.9rem;
   }
+}
 
-  .wide-card {
-    grid-column: span 1;
-  }
+/* Dark Mode */
+body.dark-mode .coding-stats {
+  background: linear-gradient(to right, #1c1f26, #2a2f3c);
+}
+
+body.dark-mode .section-title {
+  color: #00aaff;
+}
+
+body.dark-mode .stat-card {
+  background: #2a2f3c;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.08);
+}
+
+body.dark-mode .stat-card:hover {
+  box-shadow: 0 0 16px #00aaff;
+}
+
+body.dark-mode .stats-link {
+  color: #00aaff;
 }
