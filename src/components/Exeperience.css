@@ -1,6 +1,5 @@
 .experience {
-/*   background: linear-gradient(to right, #f2f9ff, #e0f2ff); */
-   background: linear-gradient(to right, #ffffff, #f6fbff);
+  background: linear-gradient(to right, #ffffff, #f6fbff);
   padding: 60px 1rem;
   text-align: center;
 }
@@ -41,6 +40,7 @@
   transform: scale(1.15);
 }
 
+/* Floating animation */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
@@ -89,7 +89,45 @@
   line-height: 1.5;
 }
 
-/* Responsive */
+/* ---------- DARK MODE OVERRIDES ---------- */
+body.dark-mode .experience {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+body.dark-mode .experience .section-title {
+  color: #00aaff;
+}
+
+body.dark-mode .experience .timeline {
+  border-left: 3px solid #00aaff;
+}
+
+body.dark-mode .experience .timeline-dot {
+  background-color: #1a1a1a;
+  border-color: #00aaff;
+}
+
+body.dark-mode .experience .timeline-content {
+  background-color: #1c1c1c;
+  border-left: 4px solid #00aaff;
+  color: #ddd;
+  /*box-shadow: 0 0 10px rgba(0, 170, 255, 0.1);*/
+}
+
+body.dark-mode .experience .timeline-content:hover {
+  box-shadow: 0 0 12px #00aaff;
+}
+
+body.dark-mode .experience .timeline-content h3 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .experience .timeline-content p,
+body.dark-mode .experience .timeline-content li {
+  color: #ccc;
+}
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.8rem;
@@ -118,4 +156,9 @@
   .timeline-content li {
     font-size: 0.9rem;
   }
+
+  body.dark-mode .timeline {
+    border-left: 2px solid #00aaff;
+  }
 }
+
