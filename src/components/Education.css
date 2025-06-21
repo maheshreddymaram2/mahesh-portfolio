@@ -1,3 +1,4 @@
+/* Light Theme*/
 .education {
   background: linear-gradient(to right, #e0f2ff, #f2f9ff);
   padding: 60px 1rem;
@@ -11,28 +12,28 @@
 }
 
 .timeline {
+  position: relative;
   margin: 0 auto;
   max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  padding-left: 0;
+  padding-left: 20px;
+  border-left:3px solid #0077ff;
 }
 
 .timeline-item {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  padding-left: 20px;
+  margin-bottom: 40px;
 }
 
 .timeline-dot {
-  width: 16px;
-  height: 16px;
-  background-color: #0077ff;
+  position: absolute;
+  left: -13px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border: 3px solid #0077ff;
   border-radius: 50%;
-  margin-top: 6px;
-  flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
@@ -40,7 +41,7 @@
   transform: scale(1.15);
 }
 
-/* Floating animation */
+/* Float animation */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
@@ -57,7 +58,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   text-align: left;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  width: 100%;
   border-left: none !important;
 }
 
@@ -79,20 +79,58 @@
   line-height: 1.5;
 }
 
-/* Responsive Design */
+/* Dark Theme*/
+body.dark-mode .education {
+  background: linear-gradient(to right, #1c1f26, #2a2f3c);
+}
+
+body.dark-mode .education .section-title {
+  color: #00aaff;
+}
+
+body.dark-mode .education .timeline {
+  border-left: 3px solid #00aaff;
+}
+
+body.dark-mode .education .timeline-dot {
+  background-color: #1a1a1a;
+  border-color: #00aaff;
+}
+
+body.dark-mode .education .timeline-content {
+  background-color: #1c1c1c;
+  border-left: 4px solid #00aaff;
+  color: #ddd;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.1);
+} 
+
+body.dark-mode .education .timeline-content:hover {
+  box-shadow: 0 0 12px #00aaff;
+}
+
+body.dark-mode .education .timeline-content h3 {
+  color: #e0e0e0;
+}
+
+body.dark-mode .education .timeline-content p {
+  color: #ccc;
+}
+
+/*Responsive Layout*/
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.8rem;
   }
 
-  .timeline-item {
-    flex-direction: row;
+  .timeline {
+    border-left: 2px solid #0077ff;
+    padding-left: 14px;
   }
 
   .timeline-dot {
-    width: 14px;
-    height: 14px;
-    margin-top: 4px;
+    width: 18px;
+    height: 18px;
+    left: -11px;
   }
 
   .timeline-content {
@@ -106,4 +144,9 @@
   .timeline-content p {
     font-size: 0.95rem;
   }
+
+  body.dark-mode .education .timeline {
+    border-left: 2px solid #00aaff;
+  }
 }
+
