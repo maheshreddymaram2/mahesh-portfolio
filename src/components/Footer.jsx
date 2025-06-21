@@ -1,12 +1,14 @@
 import './Footer.css';
-import { useEffect, useState } from 'react';
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <p className="footer-text">
           &copy; {new Date().getFullYear()} Mahesh Reddy Maram. All rights reserved.
         </p>
+
         <div className="footer-right">
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/venkata-mahesh-reddy-maram-28039626b/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
@@ -19,5 +21,3 @@ import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
     </footer>
   );
 }
-
-export default Footer;
