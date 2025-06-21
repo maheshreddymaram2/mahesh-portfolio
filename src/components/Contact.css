@@ -1,6 +1,5 @@
 .contact-section {
   padding: 60px 20px;
-/*   background: #f9fcff; */
   background: linear-gradient(to right, #ffffff, #f6fbff);
   text-align: center;
 }
@@ -69,7 +68,7 @@
   color: #005fcc;
 }
 
-/* Form Section */
+/* Message Form Section */
 .message-form-box {
   background: #ffffff;
   padding: 30px 25px;
@@ -78,8 +77,9 @@
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 119, 255, 0.1);
 }
-.message-form-box:hover{
-box-shadow: 0 0 16px #0077ff;
+
+.message-form-box:hover {
+  box-shadow: 0 0 16px #0077ff;
 }
 
 .form-heading {
@@ -144,7 +144,57 @@ box-shadow: 0 0 16px #0077ff;
   background-color: #005fcc;
 }
 
-/* Responsive */
+/* Dark Mode*/
+body.dark-mode .contact-section {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+body.dark-mode .section-title,
+body.dark-mode .form-heading {
+  color: #00aaff;
+}
+
+body.dark-mode .contact-grid-box,
+body.dark-mode .message-form-box {
+  background: #1a1a1a;
+  box-shadow: 0 0 16px #1a1a1a;
+}
+
+body.dark-mode .contact-grid-box:hover,
+body.dark-mode .message-form-box:hover {
+  box-shadow: 0 0 16px #00aaff;
+}
+
+body.dark-mode .grid-icon,
+body.dark-mode .grid-link,
+body.dark-mode .form-icon,
+body.dark-mode .social-icons a {
+  color: #00aaff;
+}
+
+body.dark-mode .form-subtext {
+  color: #cccccc;
+}
+
+body.dark-mode .contact-form .form-group {
+  background: #2a2a2a;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  color: #eaeaea;
+}
+
+body.dark-mode .send-btn {
+  background-color: #00aaff;
+  color: #000;
+}
+
+body.dark-mode .send-btn:hover {
+  background-color: #0088cc;
+}
+
+/* Responsive Design */
 @media (max-width: 600px) {
   .section-title {
     font-size: 2rem;
