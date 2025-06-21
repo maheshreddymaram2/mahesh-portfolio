@@ -9,7 +9,7 @@ function About() {
       <div className="hero-content">
         <div className="hero-text">
           <h1>
-            Hi, I’m <span>Mahesh Reddy</span>
+            Hi, I’m <span className="highlight-name">Mahesh Reddy</span>
           </h1>
           <TypeAnimation
             sequence={[
@@ -61,4 +61,5 @@ function About() {
 }
 
 export default About;
+
 
