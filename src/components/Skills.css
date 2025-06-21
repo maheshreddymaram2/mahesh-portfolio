@@ -10,7 +10,6 @@
   margin-bottom: 40px;
 }
 
-/* Grid: now applies to all skills-grid instances */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -20,12 +19,10 @@
   justify-items: center;
 }
 
-/* Section wrapper */
 .skill-section {
   margin-bottom: 2rem;
 }
 
-/* Section subtitles */
 .skill-subtitle {
   font-size: 1.5rem;
   color: #333;
@@ -64,7 +61,30 @@
   50%     { transform: translateY(-5px); }
 }
 
-/* Responsive tweaks */
+/* Dark Theme */
+body.dark-mode .skills {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+body.dark-mode .section-title {
+  color: #00aaff;
+}
+
+body.dark-mode .skill-subtitle {
+  color: #e0e0e0;
+}
+
+body.dark-mode .skill-box {
+  background: #1f1f1f;
+  color: #00aaff;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.1);
+}
+
+body.dark-mode .skill-box:hover {
+  box-shadow: 0 0 14px #00aaff;
+}
+
+/* Responsive Design*/
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.8rem;
