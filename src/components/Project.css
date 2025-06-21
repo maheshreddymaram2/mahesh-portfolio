@@ -1,6 +1,5 @@
 .projects {
-/*   background: linear-gradient(to right, #ffffff, #f6fbff); */
-  background: linear-gradient(to right, #f2f9ff, #e0f2ff);
+  background: linear-gradient(to right, #e0f2ff, #f2f9ff);
   padding: 60px 1rem;
   text-align: center;
 }
@@ -105,3 +104,42 @@
     font-size: 0.82rem;
   }
 }
+
+/* ===== Dark Theme ===== */
+body.dark-mode .projects {
+  background: linear-gradient(to right, #1c1f26, #2a2f3c);
+}
+
+body.dark-mode .section-title {
+  color: #00aaff;
+}
+
+body.dark-mode .project-card {
+  background-color: #262b37;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.05);
+}
+
+body.dark-mode .project-card:nth-child(even) {
+  background-color: #2f3545; /* background2 */
+}
+
+body.dark-mode .project-card:hover {
+  box-shadow: 0 0 15px #00aaff;
+}
+
+body.dark-mode .project-content h3 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .project-content p {
+  color: #cccccc;
+}
+
+body.dark-mode .project-links a {
+  background-color: #0077ff;
+}
+
+body.dark-mode .project-links a:hover {
+  background-color: #005fcc;
+}
+
