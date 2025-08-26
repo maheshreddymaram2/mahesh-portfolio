@@ -39,7 +39,7 @@ function About() {
           </p>
 
           <div className="hero-buttons">
-            <a href="./VenkataMaheshReddyMaram_SDE" className="btn" download>
+            <a href="VenkataMaheshReddyMaram_SDE" className="btn" download>
               Download Resume
             </a>
             <a
@@ -61,6 +61,7 @@ function About() {
 }
 
 export default About;
+
 
 
 
