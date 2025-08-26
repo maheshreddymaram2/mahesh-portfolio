@@ -1,4 +1,4 @@
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/profile.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub } from 'react-icons/fa';
 import './About.css';
@@ -61,5 +61,6 @@ function About() {
 }
 
 export default About;
+
 
 
